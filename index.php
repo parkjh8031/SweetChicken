@@ -80,6 +80,10 @@
 		}
 
 		/*롤링이미지*/
+		.slick-slide {
+			height: 900px;
+		}
+
 		.slick-dots {
 			position: relative;
 			bottom: 50px;
@@ -87,12 +91,14 @@
 		}
 
 		.slick-prev {
-			left: 10px;
+			left: 864px;
+			top: 867px;
 			z-index: 2;
 		}
 
 		.slick-next {
-			right: 10px;
+			right: 864px;
+			top: 867px;
 			z-index: 2;
 		}
 	</style>
@@ -173,7 +179,7 @@
 			</div>
 		</div>
 
-		<div id="section-main" style=" width: 100%; z-index: 1;">
+		<div id="section-main" style="width: 1920px; z-index: 1;">
 			<div class="rolling">
 				<!--롤링이미지01-->
 				<div>
