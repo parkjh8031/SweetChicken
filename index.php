@@ -138,7 +138,7 @@
 					<img src="./img/navibtn06.png" class="menu-pc" style="position: absolute; left: 1420px;">
 				</a>
 				<!--로고-->
-				<a href="#section-main" class="tab scroll">
+				<a href="#section01" class="tab scroll">
 					<img src="./img/logo.png" style="position: absolute; left: 771px; top: 50px;">
 				</a>
 				<!--배경-->
@@ -179,7 +179,7 @@
 			</div>
 		</div>
 
-		<div id="section-main" style="width: 1920px; z-index: 1;">
+		<div id="section01" style="width: 1920px; z-index: 1;">
 			<div class="rolling">
 				<!--롤링이미지01-->
 				<div>
@@ -202,10 +202,6 @@
 					<img src="./img/main_images05.jpg">
 				</div>
 			</div>
-		</div>
-
-		<div id="section01" style="height: 500px;">
-			section01
 		</div>
 
 		<div id="section02" style="height: 500px;">
