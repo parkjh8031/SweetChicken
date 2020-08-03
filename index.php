@@ -12,8 +12,8 @@
 	<link href="//fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet" type="text/css">
 
 
-	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	<link  href="./plugin/fotorama/fotorama.css" rel="stylesheet">
+	<script src="./plugin/fotorama/fotorama.js"></script>
 
 	<style>
 		@media (max-width: 600px) {
@@ -51,14 +51,12 @@
 			animation: swing ease-in-out 1s infinite alternate;
 			transform-origin: center -20px;
 			float:left;
-			position: absolute;
 			position: fixed;
 			right: 10px;
 			top: 200px;
 		}
 
 		.swing:before {
-			position: absolute;
 			width: 5px;
 			height: 5px;
 			top: -14px;
@@ -146,6 +144,12 @@
 			font-weight: 600;
 			color: white;
 		}
+
+		.interior-background {
+			position: fixed;
+			z-index: 0;
+		}
+
 	</style>
 
 </head>
@@ -221,6 +225,12 @@
 						<img src="./skin/img/scroll_inquiry.png">
 					</a>
 				</div>
+			</div>
+		</div>
+
+		<div class="interior-background">
+			<div style="position: relative; width: 1920px; height: 800px;">
+				<img src="./skin/img/interior_background.png" style="width: 1920px; height: 800px;" >
 			</div>
 		</div>
 
@@ -352,39 +362,34 @@
 				</center>
 			</div>
 			<!--메뉴 슬라이드-->
-			<div class="fotorama" data-autoplay="true" data-nav="thumbs" style="position: absolute; bottom: 100px; left: 415px; width: 1100px; background: white;">
-				<a href=""><img src="./skin/img/menu01.png"></a>
-				<a href=""><img src="./skin/img/menu02.png"></a>
-				<a href=""><img src="./skin/img/menu03.png"></a>
-				<a href=""><img src="./skin/img/menu04.png"></a>
-				<a href=""><img src="./skin/img/menu05.png"></a>
+			<div class="fotorama" data-autoplay="2000" data-nav="thumbs" style="position: absolute; bottom: 100px; left: 415px; width: 1100px; background: white;">
+				<img src="./skin/img/menu01.png">
+				<img src="./skin/img/menu02.png">
+				<img src="./skin/img/menu03.png">
+				<img src="./skin/img/menu04.png">
+				<img src="./skin/img/menu05.png">
 			</div>
-
+			
+			
 		</div>
 
-		<div id="section03" style="height: 500px;">
-			section03
+		<div id="section03" style="position: relative; z-index: 1; margin-top: -4px; height: 800px; width: 1920px;">
+			<div style="width: 1920px; height: 800px; background: blue; opacity: 30%;"></div>
+			<div class="fotorama" data-autoplay="2000" data-nav="thumbs" style="position: absolute; top: 50px; left: 415px; width: 1100px; background: white;">
+				<img src="./skin/img/menu01.png">
+				<img src="./skin/img/menu02.png">
+				<img src="./skin/img/menu03.png">
+				<img src="./skin/img/menu04.png">
+				<img src="./skin/img/menu05.png">
+			</div>
 		</div>
 
-		<div id="section04" style="height: 500px;">
+		<div id="section04" style="position: relative; z-index: 2; height: 300px; width: 1920px; background: white;;">
 			section04
-		</div>
-
-		<div id="section05" style="height: 500px;">
-			section05
-		</div>
-
-		<div id="section06" style="height: 500px;">
-			section06
-		</div>
-
-		<div id="section07" style="height: 1000px;">
-			section07
 		</div>
 	</div>
 
 	<div class="header-mobile">
-		ss
 	</div>
 </body>
 </html>
@@ -474,6 +479,11 @@
 			}, 1200);
 		});
 		setTimeout(arguments.callee, 2500);
+	});
+
+	$(window).scroll(function () { 
+		var scrollValue = $(document).scrollTop(); 
+		console.log(scrollValue);
 	});
 
 </script>
