@@ -83,30 +83,39 @@
 		}
 
 		/*롤링이미지*/
-		.slick-slide {
-			height: 900px;
+
+		.fotorama__arr fotorama__arr--prev fotorama__arr--disabled {
+			
 		}
 
-		.slick-dotted.slick-slider {
-			margin-bottom: -27px;
+		.fotorama__arr fotorama__arr--prev fotorama__arr--disabled {
+			display: none;
 		}
 
-		.slick-dots {
-			position: relative;
-			bottom: 50px;
-			color: white;
+		.fotorama__nav--dots {
+			bottom: 190px;
 		}
 
-		.slick-prev {
-			left: 864px;
-			top: 867px;
-			z-index: 2;
+		.fotorama__dot {
+			width: 12px;
+			height: 12px;
+			border-radius: 12px;
 		}
 
-		.slick-next {
-			right: 864px;
-			top: 867px;
-			z-index: 2;
+		.fotorama__nav__frame.fotorama__active .fotorama__dot {
+			width: 13px;
+			height: 13px;
+			border: none;
+			background: #7f7f7f;
+
+		}
+
+		.fotorama__nav fotorama__nav--dots {
+			background: red;
+		}
+
+		.fotorama__nav--dots .fotorama__nav__frame {
+			width: 26px;
 		}
 
 		/*메뉴*/
@@ -234,30 +243,15 @@
 			</div>
 		</div>
 
-		<div id="section01" style="width: 1920px; z-index: 1;">
-			<div class="rolling">
-				<!--롤링이미지01-->
-				<div>
-					<img src="./skin/img/main_images01.jpg">
-				</div>
-				<!--롤링이미지02-->
-				<div>
-					<img src="./skin/img/main_images02.jpg">
-				</div>
-				<!--롤링이미지03-->
-				<div>
-					<img src="./skin/img/main_images03.jpg">
-				</div>
-				<!--롤링이미지04-->
-				<div>
-					<img src="./skin/img/main_images04.jpg">
-				</div>
-				<!--롤링이미지05-->
-				<div>
-					<img src="./skin/img/main_images05.jpg">
-				</div>
-			</div>
+		<div id="section01" class="fotorama" data-autoplay="1500" data-nav="dots" data-loop="true" data-arrows="false" style="position: relative; width: 1920px; height: 900px; background: white;">
+			<img src="./skin/img/main_images01.jpg">
+			<img src="./skin/img/main_images02.jpg">
+			<img src="./skin/img/main_images03.jpg">
+			<img src="./skin/img/main_images04.jpg">
+			<img src="./skin/img/main_images05.jpg">
 		</div>
+
+		
 
 		<div id="section02" style="position: relative;">
 			<div>
@@ -384,8 +378,28 @@
 			</div>
 		</div>
 
-		<div id="section04" style="position: relative; z-index: 2; height: 300px; width: 1920px; background: white;;">
-			section04
+		<div id="section04" style="position: relative; z-index: 2; height: 200px; width: 1920px; background: white;;">
+			 <form method="post" action="./send_mail.php">
+					
+				  <label for="name">이름</label>
+				  <input style="border:#000 solid thin" type="text" id="name" name="name" /><br />
+				  <!--style="border:#000 solid thin": 선색으로 가는 검은색을 적용-->
+				  
+				  <label for="phone">전화번호</label>
+				  <input style="border:#000000 solid thin"  type="text" id="phone" name="phone" /><br />
+				  
+				  <label for="email">이메일</label>
+				  <input style="border:#000 solid thin"  type="email" id="email" name="email" /><br />
+				  
+				  <label for="content">문의 내용</label>
+				  <br />
+				  <textarea name="content" cols="50" rows="5"  id="content" style="border:#000 solid thin" ></textarea>
+
+				  <br>
+				  
+				  <input type="submit" value="폼페일보내기" name="submit" />
+					
+			</form>
 		</div>
 	</div>
 
