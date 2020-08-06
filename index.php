@@ -16,15 +16,276 @@
 	<script src="./plugin/fotorama/fotorama.js"></script>
 
 	<style>
-		@media (max-width: 600px) {
+		/*mobile*/
+		@media (max-width: 552px) {
 			.header-pc {
 				display: none;
 			}
+			.swing {
+				display: none;
+			}
+			.interior-background {
+				z-index: 2;
+			}
+			.section {
+				padding-top: 10%;
+			}
+			.section01 {
+				width: 100%;
+			}
+			.section02 {
+				width: 100%;
+			}
+			.fotorama__nav-wrap {
+				display: none;
+			}
+			.section02_menu_bg {
+				width: 100%;
+			}
+			.menu_title {
+				width: 80%;
+				left: 18%;
+				top: 3%;
+			}
+			.menu-slide {
+				bottom: 1%;
+				width: 70%;
+				left: 50%;
+				margin-left: -35%;
+			}
+			.menu_comment1 {
+				top: 13%;
+				left: 23%;
+				font-style: italic;
+				font-size: 1em;
+			}
+			.pointimg {
+				position: absolute;
+				top: 20%;
+				width: 20%;
+				height: 12%;
+				border-radius: 100%;
+				overflow: hidden;
+				box-shadow: 0 5px 15px 5px rgba(0,0,0,.3);
+				left: 35%;
+				margin-left: -10%;
+			}
+			.pimg01 {
+				top: 20%;
+			}
+			.pimg02 {
+				top: 33%;
+			}
+			.pimg03 {
+				top: 46%;
+			}
+			.pimg04 {
+				top: 59%;
+			}
+			.circle_img {
+				width: 100%;
+			}
+			.ribon_text_form {
+				position: absolute;
+				top: 0px;
+			}
+			.ribon_des_text {
+				
+			}
+			.text_form01 {
+				width: 22%;
+				top: 29.5%;
+				left: 24%;
+			}
+			.ribon_text_bg {
+				width: 100%;
+			}
+			.text_bg_01 {
+				width: 100%;
+			}
+			.ribon_text {
+				position: absolute;
+				top: -4%;
+				left: 12%;
+				width: 75%;
+			}
+			.ribon_text_01 {
+				width: 100%;
+			}
+			
+			.text_form02 {
+				width: 22%;
+				top: 42.5%;
+				left: 24%;
+			}
+			.text_bg_02 {
+				width: 100%;
+			}
+			.ribon_text_02 {
+				width: 100%;
+			}
+
+			.text_form03 {
+				width: 22%;
+				top: 55.5%;
+				left: 24%;
+			}
+			.text_bg_03 {
+				width: 100%;
+			}
+			.ribon_text_03 {
+				width: 100%;
+			}
+
+			.text_form04 {
+				width: 22%;
+				top: 68.5%;
+				left: 24%;
+			}
+			.text_bg_04 {
+				width: 100%;
+			}
+			.ribon_text_04 {
+				width: 100%;
+			}
+			.opacity_background {
+				width: 100%;
+				height: 200px;
+				opacity: 0.3;
+			}
+			.interior-slide {
+				position: absolute;
+				top: 5%;
+				width: 80%;
+				left: 50%;
+				margin-left: -40%;
+				background: white;
+			}
+			.ribon_des_text {
+				position: absolute;
+				font-size: 0.7em;
+				bottom: 130%;
+				left: 65%;
+				width: 200%;
+				color: white;
+				
+			}
+			.interior_background {
+				position: relative;
+				top: 80%;
+				width: 100%;
+			}
+
+			.interior-background {
+				position: relative;
+				top: 45%;
+				width: 100%;
+			}
+			
 		}
-		@media (min-width: 600px) {
+		/*pc*/
+		@media (min-width: 553px) {
 			.header-mobile {
 				display: none;
 			}
+			.section {
+				padding-top: 157px;
+			}
+			.section01 {
+				width: 1920px;
+				height: 900px;
+			}
+			.section02_menu_bg {
+				width: 1920px;
+			}
+			.menu_title {
+				top: 70px;
+				left: 550px;
+			}
+			.menu-slide {
+				bottom: 100px;
+				left: 415px;
+				width: 1100px;
+			}
+			.menu_comment1 {
+				font-style: italic; 
+				font-size: 37px;
+				font-weight: 600;
+				color: white;
+				top: 250px;
+				left: 685px;
+			}
+			.menu-bottom-text {
+				font-size: 60px;
+			}
+			.pointimg {
+				position: absolute;
+				top: 390px;
+				width: 246px;
+				height: 246px;
+				border-radius: 100%;
+				overflow: hidden;
+				box-shadow: 0 5px 15px 5px rgba(0,0,0,.3);
+			}
+			.pimg01 {
+				left: 333px;
+			}
+			.pimg02 {
+				left: 665px;
+			}
+			.pimg03 {
+				left: 990px;
+			}
+			.pimg04 {
+				left: 1323px;
+			}
+			.text_form01 {
+				left: 308px;
+			}
+			.text_form02 {
+				left: 640px;
+			}
+			.text_form03 {
+				left: 965px;
+			}
+			.text_form04 {
+				left: 1298px;
+			}
+			.ribon_text_form {
+				position: absolute;
+				top: 572px;
+			}
+			.ribon_text {
+				position: absolute;
+				top: 8px;
+				left: 35px;
+			}
+			.opacity_background {
+				width: 1920px;
+				height: 800px;
+			}
+			.interior-slide {
+				position: absolute;
+				top: 50px;
+				left: 415px;
+				width: 1100px;
+				background: white;
+			}
+			.section04 {
+				 height: 200px;
+				 width: 1920px;
+				 background: white;
+			}
+			.ribon_des_text {
+				font-size: 24px;
+				font-weight: 600;
+				color: white;
+			}
+			.interior_background {
+				width: 1920px;
+				height: 800px;
+			}
+			
 		}
 
 		body {
@@ -118,42 +379,6 @@
 			width: 26px;
 		}
 
-		/*메뉴*/
-		.menu_comment1 {
-			
-			font-style: italic; 
-			font-size: 37px;
-			font-weight: 600;
-			color: white;
-		}
-
-		.pointimg {
-			position: absolute;
-			top: 390px;
-			width: 246px;
-			height: 246px;
-			border-radius: 100%;
-			overflow: hidden;
-			box-shadow: 0 5px 15px 5px rgba(0,0,0,.3);
-		}
-
-		.ribon_text_form {
-			position: absolute;
-			top: 572px;
-		}
-
-		.ribon_text {
-			position: absolute;
-			top: 8px;
-			left: 35px;
-		}
-
-		.ribon_des_text {
-			font-size: 24px;
-			font-weight: 600;
-			color: white;
-		}
-
 		.interior-background {
 			position: fixed;
 			z-index: 0;
@@ -204,7 +429,7 @@
 			</header>
 		</center>
 	</div>
-	<div style="padding-top: 157px;">
+	<div class="section">
 		
 		<!--배너-->
 		<div class="swing" style="z-index: 2;">
@@ -238,12 +463,12 @@
 		</div>
 
 		<div class="interior-background">
-			<div style="position: relative; width: 1920px; height: 800px;">
-				<img src="./skin/img/interior_background.png" style="width: 1920px; height: 800px;" >
+			<div style="position: relative;">
+				<img src="./skin/img/interior_background.png" class="interior_background">
 			</div>
 		</div>
 
-		<div id="section01" class="fotorama" data-autoplay="1500" data-nav="dots" data-loop="true" data-arrows="false" style="position: relative; width: 1920px; height: 900px; background: white;">
+		<div id="section01" class="section01 fotorama" data-autoplay="1500" data-nav="dots" data-loop="true" data-arrows="false" style="position: relative; background: white;">
 			<img src="./skin/img/main_images01.jpg">
 			<img src="./skin/img/main_images02.jpg">
 			<img src="./skin/img/main_images03.jpg">
@@ -253,32 +478,32 @@
 
 		
 
-		<div id="section02" style="position: relative;">
+		<div class="section02" id="section02" style="position: relative;">
 			<div>
-				<img src="./skin/img/menu_bg.jpg" style="width: 1920px; z-index: 1;">
+				<img src="./skin/img/menu_bg.jpg" class="section02_menu_bg" style="z-index: 1;">
 			</div>
-			<div style="position: absolute; top: 70px; left: 550px;">
+			<div class="menu_title" style="position: absolute;">
 				<img src="./skin/img/menu_title.png" class="menu_title" border="0">
 			</div>
 			<!--menu text-->
-			<div class="menu_comment1" style="position: absolute; top: 250px; left: 685px; z-index: 1;">
+			<div class="menu_comment1" style="position: absolute; z-index: 1;">
 				<span style="color: yellow;">배달! 포장! 단체주문! 홀</span>
-				매출까지!
+				<span style="color: white;">매출까지!</span>
 				<br>
-				<span style="color: red; font-size: 60px;">4중 주문 폭주 시스템!</span>
+				<span class="menu-bottom-text" style="color: red;">4중 주문 폭주 시스템!</span>
 			</div>
 			
 			<!--리본이미지01-->
-			<div class="pointimg" style="left: 333px;">
-				<img src="./skin/img/menu_respectimg01.jpg" border="0">
+			<div class="pointimg pimg01">
+				<img src="./skin/img/menu_respectimg01.jpg" class="circle_img" border="0">
 			</div>
 			<!--리본텍스트01-->
-			<div class="ribon_text_form" style="left: 308px;">
+			<div class="ribon_text_form text_form01">
 				<div class="ribon_text_bg">
-					<img src="./skin/img/menu_respect_ribon.png" border="0">
+					<img src="./skin/img/menu_respect_ribon.png" class="text_bg_01" border="0">
 				</div>
 				<div class="ribon_text">
-					<img src="./skin/img/menu_respect_ribontext01.png" border="0">
+					<img src="./skin/img/menu_respect_ribontext01.png" class="ribon_text_01" border="0">
 				</div>
 				
 				<center>
@@ -291,16 +516,16 @@
 			</div>
 			
 			<!--리본이미지02-->
-			<div class="pointimg" style="left: 665px;">
-				<img src="./skin/img/menu_respectimg01.jpg" border="0">
+			<div class="pointimg pimg02">
+				<img src="./skin/img/menu_respectimg01.jpg" class="circle_img" border="0">
 			</div>
 			<!--리본텍스트02-->
-			<div class="ribon_text_form" style="left: 640px;">
+			<div class="ribon_text_form text_form02">
 				<div class="ribon_text_bg">
-					<img src="./skin/img/menu_respect_ribon.png" border="0">
+					<img src="./skin/img/menu_respect_ribon.png" class="text_bg_02" border="0">
 				</div>
 				<div class="ribon_text">
-					<img src="./skin/img/menu_respect_ribontext02.png" border="0">
+					<img src="./skin/img/menu_respect_ribontext02.png" class="ribon_text_02" border="0">
 				</div>
 
 				<center>
@@ -313,16 +538,16 @@
 			</div>
 			
 			<!--리본이미지03-->
-			<div class="pointimg" style="left: 990px;">
-				<img src="./skin/img/menu_respectimg01.jpg" border="0">
+			<div class="pointimg pimg03">
+				<img src="./skin/img/menu_respectimg01.jpg" class="circle_img" border="0">
 			</div>
 			<!--리본텍스트03-->
-			<div class="ribon_text_form" style="left: 965px;">
+			<div class="ribon_text_form text_form03">
 				<div class="ribon_text_bg">
-					<img src="./skin/img/menu_respect_ribon.png" border="0">
+					<img src="./skin/img/menu_respect_ribon.png" class="text_bg_03" border="0">
 				</div>
 				<div class="ribon_text">
-					<img src="./skin/img/menu_respect_ribontext03.png" border="0">
+					<img src="./skin/img/menu_respect_ribontext03.png" class="ribon_text_03" border="0">
 				</div>
 
 				<center>
@@ -335,16 +560,16 @@
 			</div>
 			
 			<!--리본이미지04-->
-			<div class="pointimg" style="left: 1323px;">
-				<img src="./skin/img/menu_respectimg01.jpg" border="0">
+			<div class="pointimg pimg04">
+				<img src="./skin/img/menu_respectimg04.jpg" class="circle_img" border="0">
 			</div>
 			<!--리본텍스트04-->
-			<div class="ribon_text_form" style="left: 1298px;">
+			<div class="ribon_text_form text_form04">
 				<div class="ribon_text_bg">
-					<img src="./skin/img/menu_respect_ribon.png" border="0">
+					<img src="./skin/img/menu_respect_ribon.png" class="text_bg_04" border="0">
 				</div>
 				<div class="ribon_text">
-					<img src="./skin/img/menu_respect_ribontext04.png" border="0">
+					<img src="./skin/img/menu_respect_ribontext04.png" class="ribon_text_04" border="0">
 				</div>
 
 				<center>
@@ -356,7 +581,7 @@
 				</center>
 			</div>
 			<!--메뉴 슬라이드-->
-			<div class="fotorama" data-autoplay="2000" data-nav="thumbs" style="position: absolute; bottom: 100px; left: 415px; width: 1100px; background: white;">
+			<div class="menu-slide fotorama" data-autoplay="2000" data-nav="thumbs" data-loop="true" style="position: absolute; background: white;">
 				<img src="./skin/img/menu01.png">
 				<img src="./skin/img/menu02.png">
 				<img src="./skin/img/menu03.png">
@@ -367,9 +592,9 @@
 			
 		</div>
 
-		<div id="section03" style="position: relative; z-index: 1; margin-top: -4px; height: 800px; width: 1920px;">
-			<div style="width: 1920px; height: 800px; background: blue; opacity: 30%;"></div>
-			<div class="fotorama" data-autoplay="2000" data-nav="thumbs" style="position: absolute; top: 50px; left: 415px; width: 1100px; background: white;">
+		<div id="section03" style="position: relative; z-index: 1; margin-top: -4px;">
+			<div class="opacity_background" style="background: blue; opacity: 30%;"></div>
+			<div class="interior-slide fotorama" data-autoplay="2000" data-nav="thumbs" data-loop="true" style="">
 				<img src="./skin/img/menu01.png">
 				<img src="./skin/img/menu02.png">
 				<img src="./skin/img/menu03.png">
@@ -378,7 +603,7 @@
 			</div>
 		</div>
 
-		<div id="section04" style="position: relative; z-index: 2; height: 200px; width: 1920px; background: white;;">
+		<div class="section04" id="section04" style="position: relative; z-index: 2; background: white;">
 			 <form method="post" action="./send_mail.php">
 					
 				  <label for="name">이름</label>
@@ -434,70 +659,143 @@
 		});
 	}
 
+	console.log(screen.width);
+
 	$(function() {
 		$( "document" ).ready(function() {
+			if(screen.width >= 553) {
 
-			setTimeout(function() {
-				$(".menu_title").animate({
-					width:'785'
-					}, 150 
-				);
-			}, 200);
+				setTimeout(function() {
+					$(".menu_title").animate({
+						width:'785'
+						}, 150 
+					);
+				}, 200);
 
-			setTimeout(function() {
-				$(".menu_title").animate({
-					width:'845'
-					}, 150
-				);
-			}, 400);
+				setTimeout(function() {
+					$(".menu_title").animate({
+						width:'845'
+						}, 150
+					);
+				}, 400);
 
-			setTimeout(function() {
-				$(".menu_title").animate({
-					width:'785'
-					}, 150
-				);
-			}, 600);
+				setTimeout(function() {
+					$(".menu_title").animate({
+						width:'785'
+						}, 150
+					);
+				}, 600);
 
-			setTimeout(function() {
-				$(".menu_title").animate({
-					width:'845'
-					}, 150
-				);
-			}, 800);
-				
-			setTimeout(function() {
-				$(".menu_title").animate({
-					opacity:0
-					}, 100
-				);
-			}, 900);
+				setTimeout(function() {
+					$(".menu_title").animate({
+						width:'845'
+						}, 150
+					);
+				}, 800);
+					
+				setTimeout(function() {
+					$(".menu_title").animate({
+						opacity:0
+						}, 100
+					);
+				}, 900);
 
-			setTimeout(function() {
-				$(".menu_title").animate({
-					opacity:1
-					}, 100
-				);
-			}, 1000);
+				setTimeout(function() {
+					$(".menu_title").animate({
+						opacity:1
+						}, 100
+					);
+				}, 1000);
 
-			setTimeout(function() {
-				$(".menu_title").animate({
-					opacity:0
-					}, 100
-				);
-			}, 1100);
+				setTimeout(function() {
+					$(".menu_title").animate({
+						opacity:0
+						}, 100
+					);
+				}, 1100);
 
-			setTimeout(function() {
-				$(".menu_title").animate({
-					opacity:1}, 100
-				);
-			}, 1200);
+				setTimeout(function() {
+					$(".menu_title").animate({
+						opacity:1}, 100
+					);
+				}, 1200);
+
+			} else {
+				/*
+				setTimeout(function() {
+					$(".menu_title").animate({
+						width:'75%'
+						}, 150
+					);
+				}, 200);
+
+				setTimeout(function() {
+					$(".menu_title").animate({
+						width:'80%'
+						}, 150
+					);
+				}, 400);
+
+				setTimeout(function() {
+					$(".menu_title").animate({
+						width:'75%'
+						}, 150
+					);
+				}, 600);
+
+				setTimeout(function() {
+					$(".menu_title").animate({
+						width:'80%'
+						}, 150
+					);
+				}, 800);
+					
+				setTimeout(function() {
+					$(".menu_title").animate({
+						opacity:0
+						}, 100
+					);
+				}, 900);
+
+				setTimeout(function() {
+					$(".menu_title").animate({
+						opacity:1
+						}, 100
+					);
+				}, 1000);
+
+				setTimeout(function() {
+					$(".menu_title").animate({
+						opacity:0
+						}, 100
+					);
+				}, 1100);
+
+				setTimeout(function() {
+					$(".menu_title").animate({
+						opacity:1}, 100
+					);
+				}, 1200);
+				*/
+			}
 		});
 		setTimeout(arguments.callee, 2500);
 	});
-
+	
+	/*
 	$(window).scroll(function () { 
 		var scrollValue = $(document).scrollTop(); 
 		console.log(scrollValue);
 	});
+	*/
+
+	if(screen.width < 553) {
+		var iheight = screen.height * 0.75 + 'px';
+
+		$(".section02_menu_bg").css("height", iheight);
+
+		var iheight = screen.height * 0.25 + 'px';
+		$(".opacity_background").css("height", iheight);
+	}
 
 </script>
